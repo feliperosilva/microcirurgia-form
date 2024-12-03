@@ -10,9 +10,9 @@
         <fieldset>
             <legend>Dados Pessoais</legend>
             <label style="display: block;">Nome Completo:</label>
-            <input type="text" style="display: block;">
+            <input type="text" style="display: block;" required>
             <label style="display: block;">Data de Nascimento:</label>
-            <input type="text" style="display: block;" placeholder="DD/MM/YYYY">
+            <input type="date" style="display: block;" placeholder="DD/MM/YYYY" required>
             <label style="display: block;">Gênero:</label>
             <select>
                 <option>Masculino</option>
@@ -20,21 +20,21 @@
                 <option>Prefiro não dizer</option>
             </select>
             <label style="display: block;">NIF:</label>
-            <input type="number" style="display: block;">
+            <input type="number" style="display: block;" required>
             <label style="display: block;">Contacto:</label>
-            <input type="number" style="display: block;">
+            <input type="number" style="display: block;" required>
             <label style="display: block;">E-mail:</label>
-            <input type="text" style="display: block;">
+            <input type="text" style="display: block;" required>
         </fieldset>
         <fieldset>
             <legend>Informações Médicas</legend>
             <label style="display: block;">Tipo de microcirurgia desejada:</label>
-            <input type="text" style="display: block;">
+            <input type="text" style="display: block;" required>
             <label style="display: block;">Histórico Médico:</label>
             <textarea type="text" style="display: block;"></textarea>
             <label style="display: block;">Alergias:</label>
             <label>
-                <input type="radio"> Sim
+                <input type="radio" required> Sim
             </label>
             <label>
                 <input type="radio"> Não
@@ -102,7 +102,7 @@
             <legend>Consentimento</legend>
             <div>
                 <label>
-                    <input type="checkbox"> Eu li e concordo com os <a href="Termos">Termos e Condições</a>.
+                    <input type="checkbox" required> Eu li e concordo com os <a href="Termos">Termos e Condições</a>.
                 </label>
             </div>
             <div>
@@ -114,6 +114,6 @@
     </form>
 
     <button type="submit">Enviar Formulário</button>
-    
+
 </body>
 </html>
